@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import random
 
 
@@ -80,13 +83,6 @@ def main():
         if result == number_to_reach:
             print("\nLe compte est bon !")
             break
-
-        meilleur = min(available_numbers, key=lambda x: abs(number_to_reach - x))
-        if meilleur == number_to_reach:
-            print("Bravo, vous avez atteint exactement le bon nombre !")
-        else:
-            print(f"🔻 Le compte n'est pas bon. Le plus proche est : {meilleur} (écart de {abs(number_to_reach - meilleur)})")
-
 
 if __name__ == "__main__":
     main()
